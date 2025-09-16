@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a.illlmao</title>
+    <style>
+        .flex-mono-redes {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .links-redes {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .links-redes a {
+            text-decoration: none;
+            color: white;
+            background: #e1306c;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+            text-align: center;
+        }
+        .links-redes a.tiktok {
+            background: #010101;
+        }
+        .links-redes a:hover {
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+    <h1>HOLA</h1>
+    <p>dale al boton sin miedo</p>
+    <button onclick="mostrarImagen()">dame click</button>
+    <div id="contenedor-imagen" style="margin-top:20px;"></div>
+    <script>
+    function mostrarImagen() {
+        document.getElementById('contenedor-imagen').innerHTML = `
+            <div class="flex-mono-redes">
+                <img src="mono.jpg" alt="Imagen bonita" width="300">
+                <div class="links-redes">
+                    <a href="https://www.instagram.com/a.illllmao?igsh=MTk2OGxrYzk1a292dQ%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+                    <a href="https://www.tiktok.com/@klmbv16?_t=ZM-8zlD7sxlcrI&_r=1" target="_blank" class="tiktok">TikTok</a>
+                </div>
+            </div>
+        `;
+    }
+    </script>
+</body>
+</html>
